@@ -6,6 +6,7 @@ axis.js, a &lt;1KB type checking module. Returns a Boolean for each type check.
 axis.isArray([]); // true
 axis.isObject({}); // true
 axis.isString(''); // true
+axis.isDate(new Date()); // true
 axis.isRegExp(/test/i); // true
 axis.isFunction(function () {}); // true
 axis.isBoolean(true); // true

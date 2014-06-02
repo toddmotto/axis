@@ -25,6 +25,9 @@
     isString: function (elem) {
       return getType(elem) === '[object String]';
     },
+    isDate: function (elem) {
+      return getType(elem) === '[object Date]';
+    },
     isRegExp: function (elem) {
       return getType(elem) === '[object RegExp]';
     },

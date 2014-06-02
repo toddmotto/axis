@@ -33,6 +33,16 @@ describe('axis', function () {
     });
   });
 
+  describe('axis.isDate', function () {
+    var mock;
+    beforeEach(function () {
+      mock = new Date();
+    });
+    it('should return a true if a Date', function () {
+      expect(axis.isDate(mock)).toBe(true);
+    });
+  });
+
   describe('axis.isRegExp', function () {
     var mock;
     beforeEach(function () {
