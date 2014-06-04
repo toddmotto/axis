@@ -9,6 +9,7 @@
   "indent": 2,
   "immed": true,
   "latedef": true,
+  "loopfunc": true,
   "newcap": true,
   "noarg": true,
   "quotmark": "single",
@@ -18,7 +19,6 @@
   "trailing": false,
   "sub": true,
   "globals": {
-    "define": true,
-    "ga": true
+    "define": true
   }
 }

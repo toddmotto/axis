@@ -40,5 +40,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release history
 
+- 1.1.0
+  - Rewrite to dynamically create functions, thanks [jeremenichelli](https://github.com/toddmotto/axis/pull/1)
 - 1.0.0
   - Initial release
