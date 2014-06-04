@@ -18,10 +18,15 @@
   },
   checkType = function(item){
     return getType(item) === '[object '+this+']';
+  },
+  bind = function (fn, context) {
+    return function () {
+      return fn.apply(context, arguments);
+    };
   };
 
   for( var i = 0, len = types.length; i < len; i++){
-    methods['is'+types[i]] = checkType.bind(types[i]);
+    methods['is'+types[i]] = bind(checkType, types[i]);
   }
 
   return methods;
