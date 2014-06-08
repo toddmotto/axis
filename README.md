@@ -1,4 +1,4 @@
-# axis.js [![Build Status](https://travis-ci.org/toddmotto/axis.png)](https://travis-ci.org/toddmotto/axis)
+# axis.js [![Build Status](https://travis-ci.org/toddmotto/axis.svg)](https://travis-ci.org/toddmotto/axis)
 
 axis.js, a &lt;1KB type checking module. Returns a Boolean for each type check.
 
@@ -36,7 +36,7 @@ Ensure you're using the files from the `dist` directory (contains compiled produ
 ```
 
 ## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using Grunt.
+In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using Gulp.
 
 ## Release history
 
