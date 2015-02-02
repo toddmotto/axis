@@ -1,12 +1,13 @@
+/*! axis.js v1.1.1 | (c) 2014 @toddmotto | https://github.com/toddmotto/axis */
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define(factory);
+    define([], factory);
   } else if (typeof exports === 'object') {
-    module.exports = factory;
+    module.exports = factory();
   } else {
     root.axis = factory();
   }
-})(this, function () {
+}(window,function () {
 
   'use strict';
 
@@ -28,4 +29,4 @@
 
   return exports;
 
-});
+}));
