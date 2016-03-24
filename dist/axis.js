@@ -1,32 +1,32 @@
-/*! axis.js v1.1.0 | (c) 2014 @toddmotto | https://github.com/toddmotto/axis */
+/*! axis.js v1.2.0 | (c) 2016 @toddmotto | https://github.com/toddmotto/axis */
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define(factory);
+    define([], factory);
   } else if (typeof exports === 'object') {
-    module.exports = factory;
+    module.exports = factory();
   } else {
     root.axis = factory();
   }
-})(this, function () {
+}(this, function () {
 
   'use strict';
 
-  var exports = {};
+  var axis = {};
 
   var types = 'Array Object String Date RegExp Function Boolean Number Null Undefined'.split(' ');
 
-  var type = function () {
+  function type() {
     return Object.prototype.toString.call(this).slice(8, -1);
-  };
+  }
 
   for (var i = types.length; i--;) {
-    exports['is' + types[i]] = (function (self) {
+    axis['is' + types[i]] = (function (self) {
       return function (elem) {
         return type.call(elem) === self;
       };
     })(types[i]);
   }
 
-  return exports;
+  return axis;
 
-});
+}));
