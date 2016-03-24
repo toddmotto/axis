@@ -1,6 +1,6 @@
 # axis.js [![Build Status](https://travis-ci.org/toddmotto/axis.svg)](https://travis-ci.org/toddmotto/axis)
 
-axis.js, a &lt;1KB type checking module. Returns a Boolean for each type check.
+A super-simple &lt;1KB type checking module for JavaScript that returns a `Boolean` for each type check.
 
 ```js
 axis.isArray([]); // true
@@ -13,6 +13,12 @@ axis.isBoolean(true); // true
 axis.isNumber(1); // true
 axis.isNull(null); // true
 axis.isUndefined(); // true
+```
+
+## Installing with npm
+
+```
+npm install axis.js
 ```
 
 ## Installing with Bower
