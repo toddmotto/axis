@@ -5,6 +5,7 @@
   "author": "@toddmotto",
   "license": "MIT",
   "homepage": "https://github.com/toddmotto/axis",
+  "main": "dist/axis.js",
   "devDependencies": {
     "gulp": "~3.9.0",
     "gulp-uglify": "~0.3.0",
