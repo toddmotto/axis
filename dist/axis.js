@@ -1,4 +1,4 @@
-/*! axis.js v1.2.0 | (c) 2016 @toddmotto | https://github.com/toddmotto/axis */
+/*! axis.js v1.2.1 | (c) 2016 @toddmotto | https://github.com/toddmotto/axis */
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
     define([], factory);

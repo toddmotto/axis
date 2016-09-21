@@ -1,6 +1,6 @@
 {
   "name": "axis.js",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Simple JavaScript type checking module. Returns a Boolean for each type check.",
   "author": "@toddmotto",
   "license": "MIT",
