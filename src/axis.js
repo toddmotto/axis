@@ -10,7 +10,7 @@
 
   'use strict';
 
-  var axis = {};
+  var axis = {not:{}};
 
   var types = 'Array Object String Date RegExp Function Boolean Number Null Undefined'.split(' ');
 
@@ -19,6 +19,12 @@
   }
 
   for (var i = types.length; i--;) {
+    axis.not['is' + types[i]] = (function (self) {
+      return function (elem) {
+        return type.call(elem) !== self;
+      };
+    })(types[i]);
+
     axis['is' + types[i]] = (function (self) {
       return function (elem) {
         return type.call(elem) === self;
