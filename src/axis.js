@@ -14,14 +14,14 @@
 
   var types = 'Array Object String Date RegExp Function Boolean Number Null Undefined'.split(' ');
 
-  function type() {
-    return Object.prototype.toString.call(this).slice(8, -1);
+  axis.type = function(item) {
+    return Object.prototype.toString.call(item).slice(8, -1);
   }
 
   for (var i = types.length; i--;) {
     axis['is' + types[i]] = (function (self) {
       return function (elem) {
-        return type.call(elem) === self;
+        return axis.type(elem) === self;
       };
     })(types[i]);
   }
