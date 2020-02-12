@@ -41,6 +41,11 @@ Ensure you're using the files from the `dist` directory (contains compiled produ
 </body>
 ```
 
+## Using with Node.js / TypeScript
+```typescript
+import { axis } from 'axis.js';
+```
+
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using Gulp.
 
