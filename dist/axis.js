@@ -1,4 +1,4 @@
-/*! axis.js v1.2.1 | (c) 2016 @toddmotto | https://github.com/toddmotto/axis */
+/*! axis.js v1.3.0 | (c) 2016 @toddmotto | https://github.com/toddmotto/axis */
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
     define([], factory);
@@ -15,14 +15,14 @@
 
   var types = 'Array Object String Date RegExp Function Boolean Number Null Undefined'.split(' ');
 
-  function type() {
-    return Object.prototype.toString.call(this).slice(8, -1);
+  axis.type = function(item) {
+    return Object.prototype.toString.call(item).slice(8, -1);
   }
 
   for (var i = types.length; i--;) {
     axis['is' + types[i]] = (function (self) {
       return function (elem) {
-        return type.call(elem) === self;
+        return axis.type(elem) === self;
       };
     })(types[i]);
   }

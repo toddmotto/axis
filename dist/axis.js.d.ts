@@ -3,10 +3,15 @@
 // Definitions by: glitch452
 // Project by: toddmotto
 
-/*
+/**
  * Usage: import { axis } from 'axis.js';
  */
 export namespace axis {
+
+    /**
+     * axis.type( "item" ); // "String"
+     */
+    export function type(elem: any): string;
 
     /**
      * axis.isArray( [] ); // true

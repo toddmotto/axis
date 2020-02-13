@@ -3,6 +3,7 @@
 A super-simple &lt;1KB type checking module for JavaScript that returns a `Boolean` for each type check.
 
 ```js
+axis.type("example") // "String"
 axis.isArray([]); // true
 axis.isObject({}); // true
 axis.isString(''); // true
@@ -51,6 +52,9 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release history
 
+- 1.3.0
+  - Add axis.js.d.ts to enable `import` in TypeScript, thanks [glitch452](https://github.com/glitch452/)
+  - Add `axis.type()` function, thanks [agrublev](https://github.com/agrublev/)
 - 1.2.1
   - Add `main` in `package.json`
 - 1.2.0
