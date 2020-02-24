@@ -24,7 +24,7 @@ npm install axis.js
 
 ## Using with Node.js / TypeScript
 ```typescript
-import { axis } from 'axis.js';
+import axis from 'axis.js';
 ```
 
 ## Installing with Bower
