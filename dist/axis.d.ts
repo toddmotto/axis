@@ -1,12 +1,12 @@
 // Type definitions for axis.js
 // Project: axis.js
-// Definitions by: glitch452
 // Project by: toddmotto
+// Definitions by: glitch452
 
 /**
- * Usage: import { axis } from 'axis.js';
+ * Usage: import axis from 'axis.js';
  */
-export namespace axis {
+declare namespace axis {
 
     /**
      * axis.type( "item" ); // "String"
@@ -64,3 +64,5 @@ export namespace axis {
     export function isUndefined(elem: any): boolean;
 
 }
+
+export = axis;

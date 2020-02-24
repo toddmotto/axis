@@ -22,6 +22,11 @@ axis.isUndefined(); // true
 npm install axis.js
 ```
 
+## Using with Node.js / TypeScript
+```typescript
+import { axis } from 'axis.js';
+```
+
 ## Installing with Bower
 Use the repository hook:
 
@@ -42,18 +47,13 @@ Ensure you're using the files from the `dist` directory (contains compiled produ
 </body>
 ```
 
-## Using with Node.js / TypeScript
-```typescript
-import { axis } from 'axis.js';
-```
-
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using Gulp.
 
 ## Release history
 
 - 1.3.0
-  - Add axis.js.d.ts to enable `import` in TypeScript, thanks [glitch452](https://github.com/glitch452/)
+  - Add `axis.js.d.ts` to enable `import` in TypeScript, thanks [glitch452](https://github.com/glitch452/)
   - Add `axis.type()` function, thanks [agrublev](https://github.com/agrublev/)
 - 1.2.1
   - Add `main` in `package.json`
