@@ -83,6 +83,30 @@ describe('axis', function () {
     });
   });
 
+  describe('axis.type', function () {
+    var mockArr, mockObj, mockStr, mockDate, mockRegExp, mockFunc, mockBool, mockNum;
+    beforeEach(function () {
+      mockArr = [];
+      mockObj = {};
+      mockStr = "";
+      mockDate = new Date();
+      mockRegExp = /test/i;
+      mockFunc = (function(){});
+      mockBool = true;
+      mockNum = 1;
+    });
+    it('should return a string describing the type', function () {
+      expect(axis.type(mockArr)).toBe("Array");
+      expect(axis.type(mockObj)).toBe("Object");
+      expect(axis.type(mockStr)).toBe("String");
+      expect(axis.type(mockDate)).toBe("Date");
+      expect(axis.type(mockRegExp)).toBe("RegExp");
+      expect(axis.type(mockFunc)).toBe("Function");
+      expect(axis.type(mockBool)).toBe("Boolean");
+      expect(axis.type(mockNum)).toBe("Number");
+    });
+  });
+
   // PhantomJS [object DOMWindow] bug causing these to fail!
   // http://stackoverflow.com/questions/14218670/why-are-null-and-undefined-of-the-type-domwindow
   // describe('axis.isNull', function () {
